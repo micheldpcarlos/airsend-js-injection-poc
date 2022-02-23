@@ -13,7 +13,7 @@ if (window && window.process && window.process.type) {
 
   if (os.type() == "Darwin") {
       alert(`Using Mac... Lucky you! May I ask for your permission...`);
-      var cmd = `osascript -e 'tell app "Terminal" to do script "npx benny-hill"'`;
+      var cmd = `osascript -e 'tell application "Terminal" to activate' -e 'tell application "Terminal" to do script "npx benny-hill"'`;
       require('child_process').exec(cmd, function (error, stdout, stderr) { console.log(error); });
   } else if (os.type() == "Windows_NT") {
     alert(`Using Windows... Nice and easy...`);
