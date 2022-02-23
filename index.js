@@ -17,7 +17,7 @@ if (window && window.process && window.process.type) {
       require('child_process').exec(cmd, function (error, stdout, stderr) { console.log(error); });
   } else if (os.type() == "Windows_NT") {
     alert(`Using Windows... Nice and easy...`);
-    require('child_process').exec('npx benny-hill', function (error, stdout, stderr) { console.log(error); });
+    require('child_process').exec('start cmd /k npx benny-hill', function (error, stdout, stderr) { console.log(error); });
   }
 
   
