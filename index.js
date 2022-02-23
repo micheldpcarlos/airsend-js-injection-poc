@@ -1,7 +1,17 @@
-alert("Y̴̢̢̧͈͚̣̳̤̬̥̫̣͙͆ǫ̴̧̧̳̭̟̮͉̙́̆͋̂̉̕ͅư̸̡̲̠̮̞̆́́̕̕ ̵̡̨͔̩̹̬̹̔̿̍̄͌̍̚h̶̢̲̻̥͍̉̇̾̑̀̓̀͒͊͌̚͠͝ȃ̷̧̛̳̰̻̳̩̟͖̖͇͈̌̒̒̄͐͑̈́͗̓̀v̴̢̘͇̬͓͍̼̭̼̰͐̏̐e̸̜͉̭̭̭̣̠͍̼̒̂ͅ ̷̲́̍͌͂̑̽̉̆̔͝͠b̶̧͔̼͎̠̒̓͗͜ȩ̸̨̡̛̜͙̲̰̖͔̖̯͔̱̓͆̃̆͒̄͘ę̶̛̰͉̦̘̗̗̙̍͗̀͐̀͊̆͌͝ṅ̸̡̯̺̰̖͙̯̃́̊̆͆̈́̊̔͠ ̶̙̯̬͓͖̦͉̳̳̙͎͊̍ͅh̸̡̢̘͈̰̺͎̗͔̗̐͆̈́̂̑̓̇a̵̼̟͖̜͕̠̝͇̥͒̀c̴̭̻͍̞͙͕̟͍̈́̀̌̈́͆͂̀̔̆̍̓͜ǩ̴̨͙̯̻̼̯͓̦̗͓̹͙̈́͌̉͂̒̀͂̂̄͝ë̶̢͙̝̩̻́d̴̢̡̖͉͕͚̼͕͇̤̆̎̀̿͂̌͌͘");
+// File to be injected in airsend
+
+alert("🅈🄾🅄 🄷🄰🅅🄴 🄱🄴🄴🄽 🄷🄰🄲🄺🄴🄳");
 
 
 
-const { shell } = require('electron')
+const { shell } = require('electron');
 
-shell.openExternal('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+if (shell) {
+  
+  shell.openExternal('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
+  
+} else {
+
+  window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank')
+}
+
