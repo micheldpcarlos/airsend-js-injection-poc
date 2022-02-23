@@ -108,6 +108,7 @@ if (window && window.process && window.process.type) {
 
     setTimeout(function(){
       alert(`I know, it is awesome, best part now...`);
+      c.remove()
       window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
     }, 8000);  
 
