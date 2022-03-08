@@ -1,7 +1,9 @@
+⚠️⚠️⚠️ THIS SECURITY BREACH WAS REPORTED AND IS ALREADY FIXED, HENCE THE PUBLIC REPOSITORY ⚠️⚠️⚠️
+
 # Airsend Wiki MD code injection attack
 
 
-For testing purposes I encoded the url to this script hosted here on a image tag and inserted in a index in Airsend Wiki.
+For testing purposes I encoded the url to this script hosted here on a image tag and inserted in a index in Airsend Wiki markdown.
 
 ## Markdown content
 
