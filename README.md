@@ -1,6 +1,6 @@
-⚠️⚠️⚠️ THIS SECURITY BREACH WAS REPORTED AND IS ALREADY FIXED, HENCE THE PUBLIC REPOSITORY ⚠️⚠️⚠️
+>  :warning: THIS SECURITY BREACH WAS **REPORTED** AND **FIXED**, HENCE THE PUBLIC REPOSITORY
 
-# Airsend Wiki MD code injection attack
+# Airsend Wiki Markdown XSS POC
 
 
 For testing purposes I encoded the url to this script hosted here on a image tag and inserted in a index in Airsend Wiki markdown.
